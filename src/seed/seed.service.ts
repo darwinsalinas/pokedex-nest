@@ -13,7 +13,7 @@ export class SeedService {
   ) { }
 
   async executeSeed() {
-    const data = await this.http.get<PokeapiResponse>('https://pokeapi.co/api/v2/pokemon?limit=2')
+    const data = await this.http.get<PokeapiResponse>('https://pokeapi.co/api/v2/pokemon?limit=600')
 
     const pokemons = [];
     data.results.forEach(async ({ name, url }) => {
