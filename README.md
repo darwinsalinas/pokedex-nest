@@ -17,16 +17,26 @@ yarn install
 npm i -g @nestjs/cli
 ```
 
-4. Levantar contenedor de base de datos
+4. Clonar el archivo **.env.exmaple** y renombrar la copia a **.env**
+
+5. Asignar los valores correspondientes a las variables de entorno
+
+6. Levantar contenedor de base de datos
 
 ```
 docker-compose up -d
 ```
 
-5. Ejecutar la app
+7. Ejecutar la app
 
 ```
 yarn start:dev
+```
+
+8. Alimentar la base de datos con datos de prueba haciendo una peticion al endpoint
+
+```
+http://localhost:{{port}}/api/{{version}}/seed
 ```
 
 ## Stack
