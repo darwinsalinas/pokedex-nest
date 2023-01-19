@@ -43,3 +43,5 @@ http://localhost:{{port}}/api/{{version}}/seed
 
 - MongoDB
 - Nestjs
+
+### This API was deployed on vercel at this URL: https://pokedex-nest.vercel.app/docs
