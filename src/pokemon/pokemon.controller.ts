@@ -4,8 +4,10 @@ import { CreatePokemonDto } from './dto/create-pokemon.dto';
 import { UpdatePokemonDto } from './dto/update-pokemon.dto';
 import { ValidateMongoIdPipe } from '../common/pipes/validate-mongo-id.pipe';
 import { FilterPokemosDto } from './dto/filter-pokemons.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('pokemon')
+@ApiTags('Pokemon')
 export class PokemonController {
   constructor(private readonly pokemonService: PokemonService) { }
 
