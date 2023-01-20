@@ -21,13 +21,13 @@ npm i -g @nestjs/cli
 
 5. Asignar los valores correspondientes a las variables de entorno
 
-6. Levantar contenedor de base de datos
+6. Levantar contenedores de la app y de la base de datos
 
 ```
 docker-compose up -d
 ```
 
-7. Ejecutar la app
+7. Ejecutar la app(Solo si no quieres ejecutarla con docker)
 
 ```
 yarn start:dev
